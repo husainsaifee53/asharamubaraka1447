@@ -53,10 +53,10 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('landing.webp')"}}>
+      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('landing-v1.webp')"}}>
 
         <div className="absolute inset-0 bg-black opacity-20">
-        <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
+        <img src="calicut-relay-logo-v1.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
         </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
