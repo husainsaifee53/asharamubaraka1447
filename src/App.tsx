@@ -55,7 +55,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "landing.webp" }}>
+      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/landing.webp')">
 
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
