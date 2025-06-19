@@ -225,10 +225,11 @@ function App() {
                 <div className="space-y-3 text-gray-700">
                   <p><strong>By Flight:</strong> 26km from Airport. Taxi , Uber available</p>
                   <p><strong>By Train:</strong> Less than 2km . Taxi , Auto available in station premises</p>
-                  <p><strong>By Bus:</strong> Multiple city buses stop at nearby junction</p>
                   <p><strong>By Auto:</strong> Available throughout the city to the venue</p>
-                  <p><strong>By Car:</strong> Parking available on  nearby areas</p>
-                  <p><strong>Landmarks:</strong> Near major landmarks in Calicut</p>
+                  <p><strong>Landmarks:</strong>Between 
+PalmBeach Apartments and
+Thakkaram Restaurant 
+South Beach Road</p>
                 </div>
               </div>
             </div>
@@ -361,7 +362,7 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-emerald-200">
-                <li><a href="www.its52.com" className="hover:text-white">ITS</a></li>
+                <li><a href="https://www.its52.com/" className="hover:text-white">ITS</a></li>
                 <li><a href="#about" className="hover:text-white">About the Event</a></li>
                 <li><a href="#location" className="hover:text-white">Venue Information</a></li>
                 <li><a href="#contact" className="hover:text-white">Contact Committee</a></li>
