@@ -88,6 +88,69 @@ function App() {
           </div>
         </section>
 
+      {/* FAQ Section */}
+<section id="faq" className="py-20 bg-white">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">
+        FAQ – Calicut Relay Center
+      </h2>
+      <p className="text-xl text-gray-600">
+        Ashara Mubaraka – Chennai Madras 1447H
+      </p>
+    </div>
+
+    <div className="space-y-8">
+      {[
+        {
+          q: "Is Calicut and Kozhikode the same?",
+          a: "Yes. Calicut City is in Kozhikode District of Kerala State, India."
+        },
+        {
+          q: "How to get there?",
+          a: `You can reach Calicut by Air (IATA code: CCJ - Karipur International Airport, 26Kms from city).
+          \n\n✈️ Daily direct flights from Abu Dhabi, Dubai, Doha, Mumbai, Delhi, Chennai, Bangalore.
+          \n🚆 Rail: CLT - Kozhikode Station. Direct trains from Surat, Ahmedabad, Mumbai, Chennai, Bangalore.
+          \n🚌 Road: Direct bus services from Chennai, Bangalore, Coimbatore.`
+        },
+        {
+          q: "What language is spoken in Calicut?",
+          a: "Preferred primary language is Malayalam. English and Hindi are also manageable."
+        },
+        {
+          q: "What kind of accommodation options are available in Kozhikode?",
+          a: "Calicut has a range of accommodation options, from luxury hotels to budget lodges. Options suit all preferences and budgets."
+        },
+        {
+          q: "Essential things to carry and keep handy?",
+          a: "Due to monsoon season, carry umbrellas, face masks, and weatherproof gear."
+        },
+        {
+          q: "What is Calicut famous for?",
+          a: "Calicut is known as the food capital of Kerala and is a UNESCO-recognized City of Literature."
+        },
+        {
+          q: "Any not-to-miss delicacies in Calicut?",
+          a: "Yes, tender coconut juice and banana chips are must-try local specialties."
+        },
+        {
+          q: "Are malls and shopping centers available in Calicut?",
+          a: "Yes, several large and popular malls are available. It's best to plan shopping after Ashura."
+        },
+        {
+          q: "Any nearby tourist attractions?",
+          a: "Yes. Wayanad Hill Station (80 km) and Kappad Beach (10 km). Both are currently closed during the monsoon season."
+        }
+      ].map(({ q, a }, index) => (
+        <div key={index} className="bg-emerald-50 p-6 rounded-lg shadow-md">
+          <h4 className="font-semibold text-emerald-800 mb-2">{`Q${index + 1}. ${q}`}</h4>
+          <p className="text-gray-700 whitespace-pre-line">{a}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Location Section */}
       <section id="location" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -188,7 +251,7 @@ function App() {
                     <Mail className="h-5 w-5 text-emerald-600 mr-4" />
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <p className="text-gray-600">info@asharamubaraka-calicut.org</p>
+                      <p className="text-gray-600">calicutashara1447@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center">
