@@ -256,7 +256,7 @@ South Beach Road</p>
                     <Phone className="h-5 w-5 text-emerald-600 mr-4" />
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+91 9567965253</p>
+                      <p className="text-gray-600">+91 9895207698</p>
                     </div>
                   </div>
                   <div className="flex items-center">
