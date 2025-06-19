@@ -3,47 +3,7 @@ import { Calendar, MapPin, Clock, Phone, Mail, Users, Star, ChevronDown, Menu, X
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [selectedDay, setSelectedDay] = useState(1);
-
-  // const scheduleData = [
-  //   {
-  //     day: 1,
-  //     date: "26th June 2024",
-  //     theme: "Commencement - Ya Hussain",
-  //     events: [
-  //       { time: "6:00 AM", event: "Fajr Prayer & Recitation" },
-  //       { time: "10:00 AM", event: "Majlis - The Journey Begins" },
-  //       { time: "1:00 PM", event: "Zuhr Prayer & Community Lunch" },
-  //       { time: "4:00 PM", event: "Quranic Recitation" },
-  //       { time: "7:00 PM", event: "Evening Majlis & Prayers" }
-  //     ]
-  //   },
-  //   {
-  //     day: 2,
-  //     date: "27th June 2024",
-  //     theme: "Remembrance & Reflection",
-  //     events: [
-  //       { time: "6:00 AM", event: "Morning Prayers & Dhikr" },
-  //       { time: "10:00 AM", event: "Majlis - Lessons from Karbala" },
-  //       { time: "1:00 PM", event: "Zuhr Prayer & Community Gathering" },
-  //       { time: "4:00 PM", event: "Youth Programs" },
-  //       { time: "7:00 PM", event: "Evening Majlis - Stories of Sacrifice" }
-  //     ]
-  //   },
-  //   {
-  //     day: 10,
-  //     date: "6th July 2024",
-  //     theme: "Ashura - The Day of Remembrance",
-  //     events: [
-  //       { time: "5:00 AM", event: "Special Fajr Prayer" },
-  //       { time: "9:00 AM", event: "Grand Majlis - Day of Ashura" },
-  //       { time: "12:00 PM", event: "Community Prayer & Reflection" },
-  //       { time: "2:00 PM", event: "Community Feast (Langar)" },
-  //       { time: "6:00 PM", event: "Concluding Ceremony" }
-  //     ]
-  //   }
-  // ];
-
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -98,14 +58,12 @@ function App() {
       <section id="home" className="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700 text-white">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='m30 54c13.255 0 24-10.745 24-24s-10.745-24-24-24-24 10.745-24 24 10.745 24 24 24zm0-6c10.17 0 18-7.83 18-18s-7.83-18-18-18-18 7.83-18 18 7.83 18 18 18z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `landing.webp`,
         }}></div>
         
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="mb-8">
-              <Star className="mx-auto h-16 w-16 text-amber-400 mb-4" />
-            </div>
+           
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Ashara Mubaraka
               <span className="block text-2xl md:text-3xl text-amber-300 mt-2">1447H</span>
