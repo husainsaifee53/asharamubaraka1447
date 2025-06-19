@@ -56,7 +56,7 @@ function App() {
      <section
   id="home"
   className="relative w-full h-screen bg-cover bg-center"
-  style={{ backgroundImage: "url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrJbPR86RGhsuMprcBEWxg2GsFJ-fznSYnC_tZCtkQtM3ezCbFocTp5isHuaH8Mt3GxytzfkyEa1QE4GiGL5XgCw20Z_WJEQJZLPYVEzuc-I8EmuCVWUaxLkI34wV3nb0YYRomTLA=s1360-w1360-h1020-rw')" }}
+  style={{ backgroundImage: "url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4noysGVQ8_A8siLyVJNmVR7IlcalHeF4fgSKMks8d0rAvNAGbbGgHRiuudNv4riYyxeXzeMO42oXF61o_E-pMa-CtiEy1FM2-ccDGasrfd96ORHrDMoBqogBRq1wfYnwTbFhbNaX=s1360-w1360-h1020-rw')" }}
 >
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -65,7 +65,7 @@ function App() {
   <img
   src="/calicut-relay-logo-v2.svg"
   alt="Decoration"
-  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 z-20"
+  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 md:w-[30rem] lg:w-[40rem] z-20"
 />
 
 
