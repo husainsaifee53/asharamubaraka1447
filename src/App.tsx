@@ -55,15 +55,15 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700 text-white">
+      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "landing.webp" }}>
+
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: `landing.webp`,
-        }}></div>
+        
         
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <div className="text-center">
-           
+           <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
+
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Ashara Mubaraka
               <span className="block text-2xl md:text-3xl text-amber-300 mt-2">1447H</span>
