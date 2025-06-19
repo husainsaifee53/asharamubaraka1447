@@ -5,6 +5,12 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
+    <div
+  className="min-h-screen bg-cover bg-center"
+  style={{ backgroundImage: "url('/bg.afif')" }}>
+  {/* All your site content */}
+
+
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -309,6 +315,7 @@ function App() {
         </div>
       </footer>
     </div>
+  </div>
   );
 }
 
