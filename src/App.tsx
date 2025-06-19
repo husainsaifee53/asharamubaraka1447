@@ -82,7 +82,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">About Ashara Mubaraka</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Aaqa Moula Sydena Aali Qadr Mufaddal Saifuddin T.U.S ye karam ane ehsan farmawi ne Calicut ne Relay Center nu Sharaf Inayat Kidu che.
+              Aaqa Moula Syedna Aali Qadr Mufaddal Saifuddin T.U.S ye karam ane ehsan farmawi ne Calicut ne Relay Center nu Sharaf Inayat Kidu che.
             </p>
           </div>
           </div>
@@ -179,13 +179,13 @@ function App() {
                     <p className="text-gray-600">Air-conditioned with modern facilities</p>
                   </div>
                 </div>
-                <div className="flex items-center">
+{/*                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-emerald-600 mr-3 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-800">Daily: 6:00 AM - 9:00 PM</p>
                     <p className="text-gray-600">Special timings on Day of Ashura</p>
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="mt-8 p-6 bg-emerald-50 rounded-lg">
@@ -209,6 +209,10 @@ function App() {
                   <p className="text-emerald-100">Click to view detailed directions</p>
                 </div>
               </div>
+              <div className="w-full h-96">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.1966710287957!2d75.77434559999999!3d11.2469381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6593d62c6c7e9%3A0xe06557ab3fe51cc6!2sMohammedi%20Masjid%2C%20Calicut%20(Dawoodi%20Bohra)!5e0!3m2!1sen!2sin!4v1750349406270!5m2!1sen!2sin" 
+     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
               <div className="p-6">
                 <h4 className="font-bold text-emerald-800 mb-4">How to Reach</h4>
                 <div className="space-y-3 text-gray-700">
@@ -350,8 +354,8 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-emerald-200">
+                <li><a href="www.its52.com" className="hover:text-white">ITS</a></li>
                 <li><a href="#about" className="hover:text-white">About the Event</a></li>
-{/*                 <li><a href="#schedule" className="hover:text-white">Daily Schedule</a></li> */}
                 <li><a href="#location" className="hover:text-white">Venue Information</a></li>
                 <li><a href="#contact" className="hover:text-white">Contact Committee</a></li>
               </ul>
@@ -363,7 +367,7 @@ function App() {
                 <p>📅 26th June - 5th July 2025</p>
                 <p>📍 Mohammedi Masjid, Calicut</p>
                 <p>👥 Capacity: 600 people</p>
-                <p>✉️ info@asharamubaraka-calicut.org</p>
+                <p>✉️ calicutashara1447@gmail.com</p>
               </div>
             </div>
           </div>
