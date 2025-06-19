@@ -56,7 +56,7 @@ function App() {
      <section
   id="home"
   className="relative w-full h-screen bg-cover bg-center"
-  style={{ backgroundImage: "url('/landing.webp')" }}
+  style={{ backgroundImage: "url('/landing-v1.webp')" }}
 >
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
