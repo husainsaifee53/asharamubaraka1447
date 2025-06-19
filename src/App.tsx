@@ -61,27 +61,27 @@ function App() {
         <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
         </div>
         
-        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <div className="text-center">
+        // <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+        //   <div className="text-center">
            
 
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Ashara Mubaraka
-              <span className="block text-2xl md:text-3xl text-amber-300 mt-2">1447H</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-emerald-100">
-              AHLAN WASAHLAN TO CALICUT.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <div className="flex items-center text-lg">
-                <Calendar className="h-5 w-5 mr-2 text-amber-400" />
-                26th June - 6th July 2025
-              </div>
-              <div className="flex items-center text-lg">
-                <MapPin className="h-5 w-5 mr-2 text-amber-400" />
-                Calicut, Kerala
-              </div>
-            </div>
+        //     <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        //       Ashara Mubaraka
+        //       <span className="block text-2xl md:text-3xl text-amber-300 mt-2">1447H</span>
+        //     </h1>
+        //     <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-emerald-100">
+        //       AHLAN WASAHLAN TO CALICUT.
+        //     </p>
+        //     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        //       <div className="flex items-center text-lg">
+        //         <Calendar className="h-5 w-5 mr-2 text-amber-400" />
+        //         26th June - 6th July 2025
+        //       </div>
+        //       <div className="flex items-center text-lg">
+        //         <MapPin className="h-5 w-5 mr-2 text-amber-400" />
+        //         Calicut, Kerala
+        //       </div>
+        //     </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
                 JOIN WhatsApp Group
@@ -90,8 +90,8 @@ function App() {
                 View Location
               </button>
             </div>
-          </div>
-        </div>
+          // </div>
+        // </div>
       </section>
 
       {/* About Section */}
