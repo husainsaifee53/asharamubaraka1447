@@ -55,13 +55,13 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/landing.webp')">
+      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('landing.webp')"}}>
 
         <div className="absolute inset-0 bg-black opacity-20">
         <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
         </div>
         
-        // <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+{/*         // <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         //   <div className="text-center">
            
 
@@ -81,7 +81,7 @@ function App() {
         //         <MapPin className="h-5 w-5 mr-2 text-amber-400" />
         //         Calicut, Kerala
         //       </div>
-        //     </div>
+        //     </div> */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
                 JOIN WhatsApp Group
