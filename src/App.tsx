@@ -53,20 +53,41 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('landing-v1.webp')"}}>
+     <section
+  id="home"
+  className="relative w-full h-screen bg-cover bg-center"
+  style={{ backgroundImage: "url('/landing.webp')" }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-        <div className="absolute inset-0 bg-black opacity-20">
-        <img src="calicut-relay-logo-v1.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
-        </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
-                JOIN WhatsApp Group
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-800 px-8 py-3 rounded-lg font-semibold transition-all">
-                View Location
-              </button>
-            </div>
-      </section>
+  {/* SVG image on top */}
+  <img
+    src="/calicut-relay-logo.svg"
+    alt="Decoration"
+    className="absolute top-4 left-4 w-32 md:w-48 lg:w-64 z-20"
+  />
+
+  {/* Hero Content */}
+  <div className="relative z-30 flex flex-col items-center justify-center text-center text-white h-full px-4">
+    <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      Ashara Mubaraka
+      <span className="block text-amber-300 text-2xl md:text-3xl mt-2">1447H</span>
+    </h1>
+    <p className="text-xl md:text-2xl mb-6 max-w-3xl">
+      AHLAN WASAHLAN TO CALICUT.
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
+        JOIN WhatsApp Group
+      </button>
+      <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-800 px-8 py-3 rounded-lg font-semibold transition-all">
+        View Location
+      </button>
+    </div>
+  </div>
+</section>
 
       {/* About Section */}
       <section id="about" className="py-20 bg-gray-50">
