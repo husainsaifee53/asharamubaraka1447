@@ -5,7 +5,12 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
-    <header className="bg-white py-4 flex justify-center shadow-md">
+   
+    <div
+  className="min-h-screen bg-cover bg-center"
+  style={{ backgroundImage: "url('/bg.afif')" }}>
+  {/* All your site content */}
+       <header className="bg-white py-4 flex justify-center shadow-md">
   <img
     src="/headerborder.svg" 
     alt="Ashara Header Logo"
@@ -13,10 +18,6 @@ function App() {
   />
 </header>
 
-    <div
-  className="min-h-screen bg-cover bg-center"
-  style={{ backgroundImage: "url('/bg.afif')" }}>
-  {/* All your site content */}
       {/* Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
