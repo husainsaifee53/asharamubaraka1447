@@ -177,7 +177,7 @@ function App() {
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-emerald-600 mr-3 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-gray-800">Zainee Complex</p>
+                    <p className="font-semibold text-gray-800">Mohammedi Masjid | Zainee Complex</p>
                     <p className="text-gray-600">Calicut, Kerala</p>
                   </div>
                 </div>
