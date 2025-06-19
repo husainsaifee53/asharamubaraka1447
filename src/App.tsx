@@ -9,9 +9,6 @@ function App() {
   className="min-h-screen bg-cover bg-center"
   style={{ backgroundImage: "url('/bg.afif')" }}>
   {/* All your site content */}
-
-
-    <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -315,7 +312,6 @@ function App() {
         </div>
       </footer>
     </div>
-  </div>
   );
 }
 
