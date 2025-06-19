@@ -63,10 +63,11 @@ function App() {
 
   {/* SVG image on top */}
   <img
-    src="/calicut-relay-logo-v2.svg"
-    alt="Decoration"
-    className="absolute top-4 left-4 w-32 md:w-48 lg:w-64 z-20"
-  />
+  src="/calicut-relay-logo-v2.svg"
+  alt="Decoration"
+  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 md:w-48 lg:w-64 z-20"
+/>
+
 
   {/* Hero Content */}
   
