@@ -56,7 +56,7 @@ function App() {
      <section
   id="home"
   className="relative w-full h-screen bg-cover bg-center"
-  style={{ backgroundImage: "url('/landing-v1.webp')" }}
+  style={{ backgroundImage: "url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrJbPR86RGhsuMprcBEWxg2GsFJ-fznSYnC_tZCtkQtM3ezCbFocTp5isHuaH8Mt3GxytzfkyEa1QE4GiGL5XgCw20Z_WJEQJZLPYVEzuc-I8EmuCVWUaxLkI34wV3nb0YYRomTLA=s1360-w1360-h1020-rw')" }}
 >
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
