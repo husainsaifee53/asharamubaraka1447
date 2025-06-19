@@ -5,6 +5,14 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
+    <header className="bg-white py-4 flex justify-center shadow-md">
+  <img
+    src="/headerborder.svg" 
+    alt="Ashara Header Logo"
+    className="h-16 w-auto"
+  />
+</header>
+
     <div
   className="min-h-screen bg-cover bg-center"
   style={{ backgroundImage: "url('/bg.afif')" }}>
