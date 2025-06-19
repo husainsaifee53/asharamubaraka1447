@@ -3,7 +3,7 @@ import { Calendar, MapPin, Clock, Phone, Mail, Users, Star, ChevronDown, Menu, X
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [selectedDay, setSelectedDay] = useState(1);
+  // const [selectedDay, setSelectedDay] = useState(1);
 
   // const scheduleData = [
   //   {
@@ -62,7 +62,7 @@ function App() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a href="#home" className="text-emerald-800 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                 <a href="#about" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-                <a href="#schedule" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</a>
+{/*                 <a href="#schedule" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</a> */}
                 <a href="#location" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Location</a>
                 <a href="#contact" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
               </div>
@@ -86,7 +86,7 @@ function App() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a href="#home" className="text-emerald-800 block px-3 py-2 rounded-md text-base font-medium">Home</a>
               <a href="#about" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
-              <a href="#schedule" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Schedule</a>
+{/*               <a href="#schedule" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Schedule</a> */}
               <a href="#location" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Location</a>
               <a href="#contact" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
@@ -143,7 +143,7 @@ function App() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Aaqa Moula Sydena Aali Qadr Mufaddal Saifuddin T.U.S ye karam ane ehsan farmawi ne Calicut ne Relay Center nu Sharaf Inayat Kidu che.
             </p>
-          </div
+          </div>
           </div>
         </section>
 
@@ -210,7 +210,7 @@ function App() {
       </section>
  */}
       {/* Schedule Section */}
-      <section id="schedule" className="py-20 bg-white">
+{/*       <section id="schedule" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">Program Schedule</h2>
@@ -262,7 +262,7 @@ function App() {
             )
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Location Section */}
       <section id="location" className="py-20 bg-gray-50">
@@ -473,7 +473,7 @@ function App() {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-emerald-200">
                 <li><a href="#about" className="hover:text-white">About the Event</a></li>
-                <li><a href="#schedule" className="hover:text-white">Daily Schedule</a></li>
+{/*                 <li><a href="#schedule" className="hover:text-white">Daily Schedule</a></li> */}
                 <li><a href="#location" className="hover:text-white">Venue Information</a></li>
                 <li><a href="#contact" className="hover:text-white">Contact Committee</a></li>
               </ul>
