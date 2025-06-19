@@ -5,44 +5,44 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedDay, setSelectedDay] = useState(1);
 
-  const scheduleData = [
-    {
-      day: 1,
-      date: "26th June 2024",
-      theme: "Commencement - Ya Hussain",
-      events: [
-        { time: "6:00 AM", event: "Fajr Prayer & Recitation" },
-        { time: "10:00 AM", event: "Majlis - The Journey Begins" },
-        { time: "1:00 PM", event: "Zuhr Prayer & Community Lunch" },
-        { time: "4:00 PM", event: "Quranic Recitation" },
-        { time: "7:00 PM", event: "Evening Majlis & Prayers" }
-      ]
-    },
-    {
-      day: 2,
-      date: "27th June 2024",
-      theme: "Remembrance & Reflection",
-      events: [
-        { time: "6:00 AM", event: "Morning Prayers & Dhikr" },
-        { time: "10:00 AM", event: "Majlis - Lessons from Karbala" },
-        { time: "1:00 PM", event: "Zuhr Prayer & Community Gathering" },
-        { time: "4:00 PM", event: "Youth Programs" },
-        { time: "7:00 PM", event: "Evening Majlis - Stories of Sacrifice" }
-      ]
-    },
-    {
-      day: 10,
-      date: "6th July 2024",
-      theme: "Ashura - The Day of Remembrance",
-      events: [
-        { time: "5:00 AM", event: "Special Fajr Prayer" },
-        { time: "9:00 AM", event: "Grand Majlis - Day of Ashura" },
-        { time: "12:00 PM", event: "Community Prayer & Reflection" },
-        { time: "2:00 PM", event: "Community Feast (Langar)" },
-        { time: "6:00 PM", event: "Concluding Ceremony" }
-      ]
-    }
-  ];
+  // const scheduleData = [
+  //   {
+  //     day: 1,
+  //     date: "26th June 2024",
+  //     theme: "Commencement - Ya Hussain",
+  //     events: [
+  //       { time: "6:00 AM", event: "Fajr Prayer & Recitation" },
+  //       { time: "10:00 AM", event: "Majlis - The Journey Begins" },
+  //       { time: "1:00 PM", event: "Zuhr Prayer & Community Lunch" },
+  //       { time: "4:00 PM", event: "Quranic Recitation" },
+  //       { time: "7:00 PM", event: "Evening Majlis & Prayers" }
+  //     ]
+  //   },
+  //   {
+  //     day: 2,
+  //     date: "27th June 2024",
+  //     theme: "Remembrance & Reflection",
+  //     events: [
+  //       { time: "6:00 AM", event: "Morning Prayers & Dhikr" },
+  //       { time: "10:00 AM", event: "Majlis - Lessons from Karbala" },
+  //       { time: "1:00 PM", event: "Zuhr Prayer & Community Gathering" },
+  //       { time: "4:00 PM", event: "Youth Programs" },
+  //       { time: "7:00 PM", event: "Evening Majlis - Stories of Sacrifice" }
+  //     ]
+  //   },
+  //   {
+  //     day: 10,
+  //     date: "6th July 2024",
+  //     theme: "Ashura - The Day of Remembrance",
+  //     events: [
+  //       { time: "5:00 AM", event: "Special Fajr Prayer" },
+  //       { time: "9:00 AM", event: "Grand Majlis - Day of Ashura" },
+  //       { time: "12:00 PM", event: "Community Prayer & Reflection" },
+  //       { time: "2:00 PM", event: "Community Feast (Langar)" },
+  //       { time: "6:00 PM", event: "Concluding Ceremony" }
+  //     ]
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -53,7 +53,7 @@ function App() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <h2 className="text-2xl font-bold text-emerald-800">Ashara Mubaraka</h2>
-                <p className="text-sm text-amber-600">1447H - Calicut</p>
+                <p className="text-sm text-amber-600">1447H - Calicut Relay Center</p>
               </div>
             </div>
             
@@ -111,12 +111,12 @@ function App() {
               <span className="block text-2xl md:text-3xl text-amber-300 mt-2">1447H</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-emerald-100">
-              Join us in commemorating the sacred ten days of Muharram in the blessed city of Calicut
+              AHLAN WASAHLAN TO CALICUT .
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <div className="flex items-center text-lg">
                 <Calendar className="h-5 w-5 mr-2 text-amber-400" />
-                26th June - 6th July 2024
+                26th June - 6th July 2025
               </div>
               <div className="flex items-center text-lg">
                 <MapPin className="h-5 w-5 mr-2 text-amber-400" />
@@ -125,10 +125,10 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
-                Register Now
+                JOIN WhatsApp Group
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-emerald-800 px-8 py-3 rounded-lg font-semibold transition-all">
-                View Schedule
+                View Location
               </button>
             </div>
           </div>
@@ -141,11 +141,13 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">About Ashara Mubaraka</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A sacred observance of remembrance, reflection, and community unity
+              Aaqa Moula Sydena Aali Qadr Mufaddal Saifuddin T.U.S ye karam ane ehsan farmawi ne Calicut ne Relay Center nu Sharaf Inayat Kidu che.
             </p>
+          </div
           </div>
+        </section>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+{/*           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-bold text-emerald-800 mb-6">The Sacred Ten Days</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -168,8 +170,8 @@ function App() {
                   <div className="text-sm text-gray-600">Hijri Year</div>
                 </div>
               </div>
-            </div>
-            
+            </div> */}
+{/*             
             <div className="bg-white p-8 rounded-xl shadow-lg">
               <h4 className="text-xl font-bold text-emerald-800 mb-6">Key Observances</h4>
               <div className="space-y-4">
@@ -206,7 +208,7 @@ function App() {
           </div>
         </div>
       </section>
-
+ */}
       {/* Schedule Section */}
       <section id="schedule" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -268,7 +270,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">Location & Venue</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join us at our beautiful venue in the heart of Calicut
+              Mohammedi Masjid , Calicut
             </p>
           </div>
 
@@ -279,7 +281,7 @@ function App() {
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-emerald-600 mr-3 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-gray-800">Community Hall</p>
+                    <p className="font-semibold text-gray-800">Dawoodi Bohra Complex</p>
                     <p className="text-gray-600">Calicut, Kerala</p>
                   </div>
                 </div>
@@ -303,11 +305,11 @@ function App() {
                 <h4 className="font-bold text-emerald-800 mb-3">Facilities Available</h4>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Ample parking space</li>
-                  <li>• Separate sections for families</li>
-                  <li>• Audio-visual equipment</li>
-                  <li>• Community kitchen for meals</li>
-                  <li>• Prayer facilities</li>
-                  <li>• Accessibility features</li>
+                  <li>• Rahat Block</li>
+                  <li>• Sabeel - E - Hussain</li>
+                  <li>• Mawaid</li>
+                  <li>• Buzurgo Assistance</li>
+                  <li>• Technical Assistance</li>
                 </ul>
               </div>
             </div>
@@ -323,9 +325,11 @@ function App() {
               <div className="p-6">
                 <h4 className="font-bold text-emerald-800 mb-4">How to Reach</h4>
                 <div className="space-y-3 text-gray-700">
+                  <p><strong>By Flight:</strong> 26km from Airport. Taxi , Uber available</p>
+                  <p><strong>By Train:</strong> Less than 2km . Taxi , Auto available in station premises</p>
                   <p><strong>By Bus:</strong> Multiple city buses stop at nearby junction</p>
                   <p><strong>By Auto:</strong> Available throughout the city to the venue</p>
-                  <p><strong>By Car:</strong> Parking available on-site and nearby areas</p>
+                  <p><strong>By Car:</strong> Parking available on  nearby areas</p>
                   <p><strong>Landmarks:</strong> Near major landmarks in Calicut</p>
                 </div>
               </div>
@@ -353,7 +357,7 @@ function App() {
                     <Phone className="h-5 w-5 text-emerald-600 mr-4" />
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <p className="text-gray-600">+91 XXX XXX XXXX</p>
+                      <p className="text-gray-600">+91 9567965253</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -377,16 +381,16 @@ function App() {
                 <h4 className="text-xl font-bold text-amber-800 mb-4">Committee Members</h4>
                 <div className="space-y-3">
                   <div>
-                    <p className="font-semibold text-gray-800">Committee Chairman</p>
-                    <p className="text-gray-600 text-sm">Organizing Chairman</p>
+                    <p className="font-semibold text-gray-800">Aamil Saheb</p>
+                    <p className="text-gray-600 text-sm">Shk Abbas bhai Maimoon</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Religious Coordinator</p>
-                    <p className="text-gray-600 text-sm">Religious Affairs</p>
+                    <p className="font-semibold text-gray-800">Secretary</p>
+                    <p className="text-gray-600 text-sm">Shk Siraj bhai Kapasi</p>
                   </div>
                   <div>
-                    <p className="font-semibold text-gray-800">Program Coordinator</p>
-                    <p className="text-gray-600 text-sm">Event Management</p>
+                    <p className="font-semibold text-gray-800">Jamaat Coordinator</p>
+                    <p className="text-gray-600 text-sm">Jabir bhai Engineer</p>
                   </div>
                 </div>
               </div>
@@ -455,14 +459,15 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-2xl font-bold mb-4">Ashara Mubaraka 1447H</h3>
-              <p className="text-emerald-200 mb-4">
+              </div>
+{/*               <p className="text-emerald-200 mb-4">
                 Commemorating the sacred ten days with devotion, remembrance, and community unity in Calicut.
-              </p>
-              <div className="flex items-center text-emerald-200">
+              </p> */}
+{/*               <div className="flex items-center text-emerald-200">
                 <Star className="h-5 w-5 mr-2" />
                 May peace and blessings be upon all
-              </div>
-            </div>
+              </div> */}
+{/*             </div> */}
             
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -477,8 +482,8 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Event Details</h4>
               <div className="space-y-2 text-emerald-200">
-                <p>📅 26th June - 6th July 2024</p>
-                <p>📍 Community Hall, Calicut</p>
+                <p>📅 26th June - 5th July 2025</p>
+                <p>📍 Mohammedi Masjid, Calicut</p>
                 <p>👥 Capacity: 600 people</p>
                 <p>✉️ info@asharamubaraka-calicut.org</p>
               </div>
@@ -486,8 +491,8 @@ function App() {
           </div>
           
           <div className="border-t border-emerald-800 mt-8 pt-8 text-center text-emerald-200">
-            <p>&copy; 2024 Ashara Mubaraka Committee, Calicut. All rights reserved.</p>
-            <p className="mt-2">Organized with devotion and community spirit</p>
+            <p>&copy; 2025 Ashara Mubaraka Committee 1447, Calicut. All rights reserved.</p>
+            <p className="mt-2">Developed by Hussain Saifee</p>
           </div>
         </div>
       </footer>
