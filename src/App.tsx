@@ -22,7 +22,6 @@ function App() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a href="#home" className="text-emerald-800 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                 <a href="#about" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-{/*                 <a href="#schedule" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</a> */}
                 <a href="#location" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Location</a>
                 <a href="#contact" className="text-gray-600 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
               </div>
@@ -46,7 +45,6 @@ function App() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a href="#home" className="text-emerald-800 block px-3 py-2 rounded-md text-base font-medium">Home</a>
               <a href="#about" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
-{/*               <a href="#schedule" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Schedule</a> */}
               <a href="#location" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Location</a>
               <a href="#contact" className="text-gray-600 hover:text-amber-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
             </div>
@@ -60,28 +58,6 @@ function App() {
         <div className="absolute inset-0 bg-black opacity-20">
         <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
         </div>
-        
-{/*         // <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        //   <div className="text-center">
-           
-
-        //     <h1 className="text-4xl md:text-6xl font-bold mb-6">
-        //       Ashara Mubaraka
-        //       <span className="block text-2xl md:text-3xl text-amber-300 mt-2">1447H</span>
-        //     </h1>
-        //     <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-emerald-100">
-        //       AHLAN WASAHLAN TO CALICUT.
-        //     </p>
-        //     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-        //       <div className="flex items-center text-lg">
-        //         <Calendar className="h-5 w-5 mr-2 text-amber-400" />
-        //         26th June - 6th July 2025
-        //       </div>
-        //       <div className="flex items-center text-lg">
-        //         <MapPin className="h-5 w-5 mr-2 text-amber-400" />
-        //         Calicut, Kerala
-        //       </div>
-        //     </div> */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors transform hover:scale-105">
                 JOIN WhatsApp Group
@@ -90,8 +66,6 @@ function App() {
                 View Location
               </button>
             </div>
-{/*           // </div>
-        // </div> */}
       </section>
 
       {/* About Section */}
@@ -105,123 +79,6 @@ function App() {
           </div>
           </div>
         </section>
-
-{/*           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-emerald-800 mb-6">The Sacred Ten Days</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Ashara Mubaraka represents the first ten days of Muharram, the sacred month in the Islamic calendar. 
-                These days hold profound significance as we remember the events of Karbala and reflect upon the 
-                principles of justice, sacrifice, and devotion to truth.
-              </p>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                In Calicut, this observance brings together our community in a spirit of unity, prayer, and 
-                remembrance. We gather to honor the legacy of Imam Hussain (AS) and draw inspiration from 
-                his unwavering commitment to righteousness.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-white rounded-lg shadow">
-                  <div className="text-2xl font-bold text-emerald-800">10</div>
-                  <div className="text-sm text-gray-600">Sacred Days</div>
-                </div>
-                <div className="text-center p-4 bg-white rounded-lg shadow">
-                  <div className="text-2xl font-bold text-emerald-800">1447</div>
-                  <div className="text-sm text-gray-600">Hijri Year</div>
-                </div>
-              </div>
-            </div> */}
-{/*             
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h4 className="text-xl font-bold text-emerald-800 mb-6">Key Observances</h4>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <div>
-                    <h5 className="font-semibold text-gray-800">Daily Majlis</h5>
-                    <p className="text-gray-600 text-sm">Spiritual gatherings with recitation and reflection</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <div>
-                    <h5 className="font-semibold text-gray-800">Community Prayers</h5>
-                    <p className="text-gray-600 text-sm">Congregational prayers throughout the ten days</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <div>
-                    <h5 className="font-semibold text-gray-800">Day of Ashura</h5>
-                    <p className="text-gray-600 text-sm">The culminating day of remembrance and reflection</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <div>
-                    <h5 className="font-semibold text-gray-800">Community Service</h5>
-                    <p className="text-gray-600 text-sm">Charitable activities and community support</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
- */}
-      {/* Schedule Section */}
-{/*       <section id="schedule" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-4">Program Schedule</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Daily programs designed to foster spiritual growth and community connection
-            </p>
-          </div>
-
-          <div className="mb-8">
-            <div className="flex flex-wrap justify-center gap-2">
-              {scheduleData.map((day) => (
-                <button
-                  key={day.day}
-                  onClick={() => setSelectedDay(day.day)}
-                  className={`px-6 py-3 rounded-lg font-semibold transition-colors ${
-                    selectedDay === day.day
-                      ? 'bg-emerald-800 text-white'
-                      : 'bg-gray-200 text-gray-700 hover:bg-emerald-100'
-                  }`}
-                >
-                  Day {day.day}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {scheduleData.map((day) => (
-            selectedDay === day.day && (
-              <div key={day.day} className="bg-gradient-to-r from-emerald-50 to-amber-50 rounded-xl p-8">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-emerald-800 mb-2">Day {day.day} - {day.date}</h3>
-                  <p className="text-xl text-amber-700 font-semibold">{day.theme}</p>
-                </div>
-                
-                <div className="grid gap-4">
-                  {day.events.map((event, index) => (
-                    <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                          <Clock className="h-5 w-5 text-emerald-600 mr-3" />
-                          <span className="font-semibold text-emerald-800">{event.time}</span>
-                        </div>
-                        <div className="text-gray-700 font-medium">{event.event}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )
-          ))}
-        </div>
-      </section> */}
 
       {/* Location Section */}
       <section id="location" className="py-20 bg-gray-50">
@@ -416,18 +273,9 @@ function App() {
       <footer className="bg-emerald-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <div>
+              <div>
               <h3 className="text-2xl font-bold mb-4">Ashara Mubaraka 1447H</h3>
               </div>
-{/*               <p className="text-emerald-200 mb-4">
-                Commemorating the sacred ten days with devotion, remembrance, and community unity in Calicut.
-              </p> */}
-{/*               <div className="flex items-center text-emerald-200">
-                <Star className="h-5 w-5 mr-2" />
-                May peace and blessings be upon all
-              </div> */}
-{/*             </div> */}
-            
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-emerald-200">
