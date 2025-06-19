@@ -58,11 +58,12 @@ function App() {
       <section id="home" className="relative bg-cover bg-center text-white" style={{ backgroundImage: "landing.webp" }}>
 
         <div className="absolute inset-0 bg-black opacity-20"></div>
+        <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
         
         
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <div className="text-center">
-           <img src="calicut-relay-logo.svg" alt="Decoration" className="absolute top-0 left-0 w-32 md:w-48 lg:w-64 z-10" />
+{/*           <div className="text-center">
+           
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Ashara Mubaraka
@@ -70,7 +71,7 @@ function App() {
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-emerald-100">
               AHLAN WASAHLAN TO CALICUT .
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <div className="flex items-center text-lg">
                 <Calendar className="h-5 w-5 mr-2 text-amber-400" />
