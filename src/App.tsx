@@ -5,18 +5,19 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
-   
+  
     <div
   className="min-h-screen bg-cover bg-center"
   style={{ backgroundImage: "url('/bg.afif')" }}>
   {/* All your site content */}
-       <header className="bg-white py-4 flex justify-center shadow-md">
+  <header className="bg-white py-4 flex justify-center shadow-md">
   <img
     src="/headerborder.svg" 
     alt="Ashara Header Logo"
     className="h-16 w-auto"
   />
 </header>
+
 
       {/* Navigation */}
       <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -65,7 +66,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-     <section
+    <section
   id="home"
   className="relative w-full h-screen bg-cover bg-center"
   style={{ backgroundImage: "url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4noysGVQ8_A8siLyVJNmVR7IlcalHeF4fgSKMks8d0rAvNAGbbGgHRiuudNv4riYyxeXzeMO42oXF61o_E-pMa-CtiEy1FM2-ccDGasrfd96ORHrDMoBqogBRq1wfYnwTbFhbNaX=s1360-w1360-h1020-rw')" }}
@@ -285,7 +286,10 @@ South Beach Road</p>
                 </div>
               </div>
 
-              <div className="bg-amber-50 rounded-xl p-8">
+              
+            </div>
+
+            <div className="bg-amber-50 rounded-xl p-8">
                 <h4 className="text-xl font-bold text-amber-800 mb-4">Committee Members</h4>
                 <div className="space-y-3">
                   <div>
@@ -303,25 +307,25 @@ South Beach Road</p>
                 </div>
               </div>
             </div>
-
-            <div className="bg-gray-50 rounded-xl p-8">
+            <br></br>
+            {/* <div className="bg-gray-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-emerald-800 mb-6">Send us a Message</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Name as on ITS</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
-                      placeholder="Your first name"
+                      placeholder="Name as on ITS"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">ITS No</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
-                      placeholder="Your last name"
+                      placeholder="ITS Number"
                     />
                   </div>
                 </div>
@@ -342,11 +346,11 @@ South Beach Road</p>
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Query</label>
                   <textarea
                     rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
-                    placeholder="Your message..."
+                    placeholder="Aapnu suwaal "
                   />
                 </div>
                 <button
@@ -356,9 +360,9 @@ South Beach Road</p>
                   Send Message
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
-        </div>
+        
       </section>
 
       {/* Footer */}
