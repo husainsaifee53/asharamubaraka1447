@@ -1,5 +1,93 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { Calendar, MapPin, Clock, Phone, Mail, Users, Star, ChevronDown, Menu, X } from 'lucide-react';
+
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
+const CountdownTimer = () => {
+  const calculateTimeLeft = (): TimeLeft => {
+    const difference = +new Date('2025-06-26') - +new Date();
+    let timeLeft: TimeLeft = {
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    };
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+  // Format numbers to always show 2 digits
+  const formatNumber = (num: number) => {
+    return num < 10 ? `0${num}` : num.toString();
+  };
+
+  return (
+    <div className="countdown">
+      <p className="count-label flex items-center gap-2 text-amber-200 mb-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-timer"
+        >
+          <line x1="10" x2="14" y1="2" y2="2" />
+          <line x1="12" x2="15" y1="14" y2="11" />
+          <circle cx="12" cy="14" r="8" />
+        </svg>
+        Countdown to Ashara Mubaraka
+      </p>
+      <div className="count-boxes flex gap-2 md:gap-4">
+        <div className="bg-emerald-800 bg-opacity-50 rounded-lg p-3 text-center min-w-[70px]">
+          <span className="font-bold text-2xl block">{formatNumber(timeLeft.days)}</span>
+          <small className="text-amber-200 text-xs">Days</small>
+        </div>
+        <div className="bg-emerald-800 bg-opacity-50 rounded-lg p-3 text-center min-w-[70px]">
+          <span className="font-bold text-2xl block">{formatNumber(timeLeft.hours)}</span>
+          <small className="text-amber-200 text-xs">Hours</small>
+        </div>
+        <div className="bg-emerald-800 bg-opacity-50 rounded-lg p-3 text-center min-w-[70px]">
+          <span className="font-bold text-2xl block">{formatNumber(timeLeft.minutes)}</span>
+          <small className="text-amber-200 text-xs">Minutes</small>
+        </div>
+        <div className="bg-emerald-800 bg-opacity-50 rounded-lg p-3 text-center min-w-[70px]">
+          <span className="font-bold text-2xl block">{formatNumber(timeLeft.seconds)}</span>
+          <small className="text-amber-200 text-xs">Seconds</small>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -189,13 +277,7 @@ function App() {
                     <p className="text-gray-600">Air-conditioned with modern facilities</p>
                   </div>
                 </div>
-{/*                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-emerald-600 mr-3 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-gray-800">Daily: 6:00 AM - 9:00 PM</p>
-                    <p className="text-gray-600">Special timings on Day of Ashura</p>
-                  </div>
-                </div> */}
+
               </div>
               
               <div className="mt-8 p-6 bg-emerald-50 rounded-lg">
@@ -209,6 +291,18 @@ function App() {
                   <li>• Technical Assistance</li>
                 </ul>
               </div>
+              <br></br>
+              <div className="mb-12 rounded-xl overflow-hidden shadow-lg">
+      <div className="aspect-w-16 aspect-h-9 w-rounded">
+        <iframe
+          src="https://www.youtube.com/embed/m7GMPkEsePs?si=Ydpzpo9QUAslNpNB&amp;start=8"
+          title="Mohammedi Masjid Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-[200px] sm:h-[350px] md:h-[400px] lg:h-[450px]"
+        ></iframe>
+      </div>
+    </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
@@ -219,10 +313,11 @@ function App() {
                   <p className="text-emerald-100">Click to view detailed directions</p>
                 </div>
               </div>
-              <div className="w-full h-96">
+              <br></br>
+              <div className="w-rounded h-96">
                 <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.1966710287957!2d75.77434559999999!3d11.2469381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6593d62c6c7e9%3A0xe06557ab3fe51cc6!2sMohammedi%20Masjid%2C%20Calicut%20(Dawoodi%20Bohra)!5e0!3m2!1sen!2sin!4v1750349406270!5m2!1sen!2sin"
-      className="w-full h-full border-0"
+      className="w-full h-full border-15 rounded-lg"
       allowFullScreen
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
@@ -230,8 +325,10 @@ function App() {
 {/*    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.1966710287957!2d75.77434559999999!3d11.2469381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6593d62c6c7e9%3A0xe06557ab3fe51cc6!2sMohammedi%20Masjid%2C%20Calicut%20(Dawoodi%20Bohra)!5e0!3m2!1sen!2sin!4v1750349406270!5m2!1sen!2sin" 
      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
   </div>
+  <br></br>
               <div className="p-6">
                 <h4 className="font-bold text-emerald-800 mb-4">How to Reach</h4>
+                <br></br>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>By Flight:</strong> 26km from Airport. Taxi , Uber available</p>
                   <p><strong>By Train:</strong> Less than 2km . Taxi , Auto available in station premises</p>
@@ -246,7 +343,10 @@ South Beach Road</p>
           </div>
         </div>
       </section>
-
+      {/* <section> */}
+        {/* YouTube Video Embed - Added this new div */}
+    
+      {/* </section> */}
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -371,6 +471,7 @@ South Beach Road</p>
           <div className="grid md:grid-cols-3 gap-8">
               <div>
               <h3 className="text-2xl font-bold mb-4">Ashara Mubaraka 1447H</h3>
+              <CountdownTimer />
               </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
