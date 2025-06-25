@@ -186,6 +186,41 @@ function App() {
           </div>
         </section>
 
+
+
+{/* 
+<a
+  href="https://miqaat.its52.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block max-w-xs mx-auto bg-amber border border-amber-400 rounded-xl p-5 shadow-lg hover:shadow-2xl transition"
+>
+  <h3 className="text-lg font-bold text-amber-600 mb-2">ITS Miqaat Portal</h3>
+  <p className="text-gray-700 text-sm">Login to access Miqaat registration and details.</p>
+</a> */}
+
+<div className="max-w-xs mx-auto space-y-4">
+  <a
+    href="https://miqaat.its52.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-amber-500 text-white text-center font-bold py-3 px-4 rounded-lg shadow-md hover:bg-amber-600 transition"
+  >
+    View Your Pass (ITS Website)
+  </a>
+  {/* WhatsApp RSVP Group Button */}
+  <a
+    href="https://chat.whatsapp.com/BJDjbsZHlvUDuBZuJ1Zgcr"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-green-600 text-white text-center font-bold py-3 px-4 rounded-lg shadow-md hover:bg-green-700 transition"
+  >
+    📲 Join Calicut Ashara 1447 RSVP
+  </a>
+
+  
+</div>
+
       {/* FAQ Section */}
 <section id="faq" className="py-20 bg-white">
   <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
