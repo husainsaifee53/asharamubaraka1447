@@ -531,7 +531,7 @@ South Beach Road</p>
           
           <div className="border-t border-emerald-800 mt-8 pt-8 text-center text-emerald-200">
             <p>&copy; 2025 Ashara Mubaraka Committee 1447, Calicut. All rights reserved.</p>
-            <p className="mt-2">Developed by Hussain Saifee</p>
+            <p className="mt-2">Developed by <a href="https://wa.me/919567965253">Hussain Saifee</a></p>
           </div>
         </div>
       </footer>
